@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+  </head>
+  <body>
+    <h1>AI Text Summarizer App</h1>
+    <p> Welcome to the AI Text Summarizer App! Our app uses advanced Artificial Intelligence to create quick and easy-to-read summaries of long texts. Whether you have a lengthy article, a research paper, or any other text document, our app can help you get the gist of it in no time. Save time and stay informed with our powerful summarization tool! </p>
+    
+    
+    <p>Try this Demo Prompt to see how it works</p>
+    <button class="demo" id="showPrompt">Demo</button>
+
+    <dialog id="favDialog">
+      <form method="dialog">
+        <p >Prompt: <p id="Prompt" class="content"></p></p>
+        
+        <button class="democlose">Close Demo</button>
+      </form>
+    </dialog>
+
+    <p> Simply paste your text into the text area below and click the "Summarize" button. </p>
+    
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button" >
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box"> 
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
+      </div>
+    </div>
+    <!--<section class="cta-section">
+      <div class="cta-content">
+        <div class="cta-text">
+        <h2>Curious how to build this app?</h2>
+        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
+          <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as student</a>
+        </div>
+        <img src="images/learning.png"></img>
+      </div>
+    </section>-->
+    <script src="script.js"></script>
+  </body>
+</html>
